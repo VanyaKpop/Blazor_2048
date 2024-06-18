@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\App\Gaming\Blazor_2048\Release</_PublishTargetUrl>
+    <History>True|2024-06-18T04:47:03.1963400Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

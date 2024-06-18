@@ -1,0 +1,120 @@
+﻿@page "/"
+@inject IGameStateService State
+
+<PageTitle>Home</PageTitle>
+<body @ref="Game" tabindex="0" @onkeydown="@KeyDownAsync">
+    <div class="Game">
+        <table class="Table" @ontouchstart="HandleTouchStart" @ontouchend="HandleTouchEndAsync">
+            @foreach (var row in State.GetRows())
+            {
+                <tr>
+                    @foreach (var tile in row)
+                    {
+                        <Tile AnimationFactor=tile.AnimationFactor
+                              NewTile=tile.NewTile
+                              Value="tile.Value"
+                              Merged="tile.Merged"
+                              CurrentMove=CurrentMove />
+                    }
+                </tr>
+            }
+        </table>
+        <div class="UI">
+            Score: @State.GetScore()
+            <button class="Button" @onclick="ResetAsync">Reset</button>
+        </div>
+    </div>
+</body>
+
+
+
+@code {
+    private ElementReference Game;
+    public Move? CurrentMove { get; set; } = null;
+
+    protected async override Task OnInitializedAsync()
+    {
+        await State.ResetBoardAsync();
+    }
+
+    (TouchPoint ReferencePoint, DateTime StartTime) startPoint;
+
+    protected void HandleTouchStart(TouchEventArgs t)
+    {
+        startPoint.ReferencePoint = t.TargetTouches[0];
+        startPoint.StartTime = DateTime.Now;
+    }
+
+    protected async Task HandleTouchEndAsync(TouchEventArgs t)
+    {
+        const double swipeThreshold = 0.8;
+        try
+        {
+            if (startPoint.ReferencePoint == null)
+            {
+                return;
+            }
+
+            var endReferencePoint = t.ChangedTouches[0];
+
+            var diffX = startPoint.ReferencePoint.ClientX - endReferencePoint.ClientX;
+            var diffY = startPoint.ReferencePoint.ClientY - endReferencePoint.ClientY;
+            var diffTime = DateTime.Now - startPoint.StartTime;
+            var velocityX = Math.Abs(diffX / diffTime.Milliseconds);
+            var velocityY = Math.Abs(diffY / diffTime.Milliseconds);
+
+            if (velocityX < swipeThreshold && velocityY < swipeThreshold) return;
+            if (Math.Abs(velocityX - velocityY) < .5) return;
+            if (State.IsMoving) return;
+
+            if (velocityX >= swipeThreshold)
+            {
+                CurrentMove = diffX < 0 ? Move.RIGHT : Move.LEFT;
+                await State.MoveAsync(CurrentMove.Value);
+                CurrentMove = null;
+            }
+            if (velocityY >= swipeThreshold)
+            {
+                CurrentMove = diffY < 0 ? Move.DOWN : Move.UP;
+                await State.MoveAsync(CurrentMove.Value);
+                CurrentMove = null;
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Gesture failed: Message - {ex.Message}");
+        }
+    }
+
+    protected async Task KeyDownAsync(KeyboardEventArgs e)
+    {
+        if (State.IsMoving)
+            return;
+
+        CurrentMove = e.Key switch
+        {
+            "ArrowUp" => Move.UP,
+            "ArrowRight" => Move.RIGHT,
+            "ArrowDown" => Move.DOWN,
+            "ArrowLeft" => Move.LEFT,
+            _ => null
+        };
+        if (CurrentMove.HasValue)
+        {
+            await State.MoveAsync(CurrentMove.Value);
+            CurrentMove = null;
+        }
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Game.FocusAsync();
+        }
+    }
+    public async Task ResetAsync()
+    {
+        await State.ResetBoardAsync();
+        await Game.FocusAsync();
+    }
+}
