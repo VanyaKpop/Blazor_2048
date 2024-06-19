@@ -35,6 +35,19 @@ body {
     justify-content: center;
 }
 
+.literallyCircle {
+    background-color: #CE2525;
+    width: 25%;
+    height: 50%;
+    margin-bottom: 25%;
+    margin-top: 0;
+    margin-left: 25%;
+    margin-right: 0;
+    padding: 0;
+    border-radius: 50%;
+    position: absolute;
+}
+
 .Button {
     margin: 10px;
     border: none;

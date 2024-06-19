@@ -307,57 +307,57 @@
     background-color: #F8DFDD;
 }
 
-.tile-yellow {
+.tile-2 {
     color: #292826;
-    background-color: #F9D342;
+    background-color: #FFFFFF;
 }
 
-.tile-pink {
-    color: #3D15FF;
-    background-color: #DF678C;
+.tile-4 {
+    color: #292826;
+    background-color: #DCDCDC;
 }
 
-.tile-blue {
-    color: #CCF381;
-    background-color: #4831D4;
+.tile-8 {
+    color: #292826;
+    background-color: #CDCDCD;
 }
 
-.tile-orange {
-    color: #4A274F;
-    background-color: #F0A07C;
+.tile-16 {
+    color: #292826;
+    background-color: #BCBCBC;
 }
 
-.tile-red {
-    color: #2B3252;
-    background-color: #EF5455;
+.tile-32 {
+    color: #292826;
+    background-color: #ABABAB;
 }
 
-.tile-purple {
-    color: #FFF748;
-    background-color: #3C1A5B;
+.tile-64 {
+    color: #292826;
+    background-color: #9B9B9B;
 }
 
-.tile-black {
-    color: #EC4D37;
-    background-color: #1D1B1B;
+.tile-128 {
+    color: #292826;
+    background-color: #8C8B8B;
 }
 
-.tile-turquoise {
-    color: #8BD8BD;
-    background-color: #243665;
+.tile-256 {
+    color: #292826;
+    background-color: #7C7B7B;
 }
 
-.tile-oranger {
-    color: #141A46;
-    background-color: #EC8B5E;
+.tile-512 {
+    color: #BFBFBF;
+    background-color: #4E4D4D;
 }
 
-.tile-green {
-    color: #FFE67C;
-    background-color: #295F2D;
+.tile-1024 {
+    color: #BFBFBF;
+    background-color: #323232;
 }
 
-.tile-bright-pink {
-    color: #080A52;
-    background-color: #EB2188;
+.tile-2048 {
+    color: #BFBFBF;
+    background-color: #1F1F1F;
 }
