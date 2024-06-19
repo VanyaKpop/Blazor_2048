@@ -304,8 +304,9 @@ td[b-8py8scekn1] {
     }
 }
 
-.tile-blank[b-8py8scekn1] {
-    background-color: #F8DFDD;
+.tile-default[b-8py8scekn1] {
+    color: #CE2525;
+    background-color: #1F1F1F;
 }
 
 .tile-2[b-8py8scekn1] {
@@ -361,6 +362,15 @@ td[b-8py8scekn1] {
 .tile-2048[b-8py8scekn1] {
     color: #BFBFBF;
     background-color: #1F1F1F;
+}
+
+@media screen and (max-width: 800px) {
+    td[b-8py8scekn1] {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        padding: 3px;
+    }
 }
 /* /Pages/Home.razor.rz.scp.css */
 *[b-uacay12q30] {
@@ -431,3 +441,24 @@ body[b-uacay12q30] {
         position: relative;
         top: 1px;
     }
+
+@media screen and (max-width: 900px) {
+    .literallyCircle[b-uacay12q30] {
+        display: none
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .literallyCircle[b-uacay12q30] {
+        background-color: #CE2525;
+        width: 600px;
+        height: 600px;
+        margin-bottom: 25%;
+        margin-top: 0;
+        margin-left: 25%;
+        margin-right: 0;
+        padding: 0;
+        border-radius: 50%;
+        position: absolute;
+    }
+}
