@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\App\\Gaming\\Blazor_2048\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C106A846-9209-405E-BBA7-AE5138AE5361}|Blazor_2048.csproj|c:\\app\\gaming\\blazor_2048\\components\\tile.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C106A846-9209-405E-BBA7-AE5138AE5361}|Blazor_2048.csproj|solutionrelative:components\\tile.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C106A846-9209-405E-BBA7-AE5138AE5361}|Blazor_2048.csproj|c:\\app\\gaming\\blazor_2048\\pages\\home.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{C106A846-9209-405E-BBA7-AE5138AE5361}|Blazor_2048.csproj|solutionrelative:pages\\home.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C106A846-9209-405E-BBA7-AE5138AE5361}|Blazor_2048.csproj|c:\\app\\gaming\\blazor_2048\\components\\tile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C106A846-9209-405E-BBA7-AE5138AE5361}|Blazor_2048.csproj|solutionrelative:components\\tile.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C106A846-9209-405E-BBA7-AE5138AE5361}|Blazor_2048.csproj|c:\\app\\gaming\\blazor_2048\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -18,30 +26,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Tile.razor.css",
+              "DocumentMoniker": "C:\\App\\Gaming\\Blazor_2048\\Components\\Tile.razor.css",
+              "RelativeDocumentMoniker": "Components\\Tile.razor.css",
+              "ToolTip": "C:\\App\\Gaming\\Blazor_2048\\Components\\Tile.razor.css",
+              "RelativeToolTip": "Components\\Tile.razor.css",
+              "ViewState": "AQIAACIBAAAAAAAAAAAAADUBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-19T11:14:40.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tile.razor",
+              "DocumentMoniker": "C:\\App\\Gaming\\Blazor_2048\\Components\\Tile.razor",
+              "RelativeDocumentMoniker": "Components\\Tile.razor",
+              "ToolTip": "C:\\App\\Gaming\\Blazor_2048\\Components\\Tile.razor",
+              "RelativeToolTip": "Components\\Tile.razor",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-19T11:14:35.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\App\\Gaming\\Blazor_2048\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Pages\\Home.razor",
               "ToolTip": "C:\\App\\Gaming\\Blazor_2048\\Pages\\Home.razor",
               "RelativeToolTip": "Pages\\Home.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAQAAAB8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-19T10:58:48.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T10:58:48.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Home.razor.css",
               "DocumentMoniker": "C:\\App\\Gaming\\Blazor_2048\\Pages\\Home.razor.css",
               "RelativeDocumentMoniker": "Pages\\Home.razor.css",
               "ToolTip": "C:\\App\\Gaming\\Blazor_2048\\Pages\\Home.razor.css",
               "RelativeToolTip": "Pages\\Home.razor.css",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACkAAAAUAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAE0AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-06-19T10:58:40.36Z",
               "EditorCaption": ""

@@ -2,10 +2,10 @@
 @inject IGameStateService State
 
 <PageTitle>Home</PageTitle>
-<body @ref="Game" tabindex="0" @onkeydown="@KeyDownAsync">
+<body @ref="Game" tabindex="0" @onkeydown="@KeyDownAsync" @ontouchstart="HandleTouchStart" @ontouchend="HandleTouchEndAsync">
     <div class="literallyCircle"/>
     <div class="Game">
-        <table class="Table" @ontouchstart="HandleTouchStart" @ontouchend="HandleTouchEndAsync">
+        <table class="Table" >
             @foreach (var row in State.GetRows())
             {
                 <tr>

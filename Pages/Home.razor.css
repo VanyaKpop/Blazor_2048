@@ -66,3 +66,24 @@ body {
         position: relative;
         top: 1px;
     }
+
+@media screen and (max-width: 900px) {
+    .literallyCircle {
+        display: none
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .literallyCircle {
+        background-color: #CE2525;
+        width: 600px;
+        height: 600px;
+        margin-bottom: 25%;
+        margin-top: 0;
+        margin-left: 25%;
+        margin-right: 0;
+        padding: 0;
+        border-radius: 50%;
+        position: absolute;
+    }
+}

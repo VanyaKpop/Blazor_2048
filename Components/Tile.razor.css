@@ -303,8 +303,9 @@
     }
 }
 
-.tile-blank {
-    background-color: #F8DFDD;
+.tile-default {
+    color: #CE2525;
+    background-color: #1F1F1F;
 }
 
 .tile-2 {
@@ -360,4 +361,13 @@
 .tile-2048 {
     color: #BFBFBF;
     background-color: #1F1F1F;
+}
+
+@media screen and (max-width: 800px) {
+    td {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        padding: 3px;
+    }
 }
