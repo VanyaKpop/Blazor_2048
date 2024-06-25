@@ -46,6 +46,7 @@ body {
     padding: 0;
     border-radius: 50%;
     position: absolute;
+    display: none;
 }
 
 .Button {
