@@ -16,6 +16,9 @@ td[b-8py8scekn1] {
     flex-direction: column;
     font-size: 30px;
     border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .new-tile[b-8py8scekn1] {
@@ -421,6 +424,7 @@ body[b-uacay12q30] {
     padding: 0;
     border-radius: 50%;
     position: absolute;
+    display: none;
 }
 
 .Button[b-uacay12q30] {
